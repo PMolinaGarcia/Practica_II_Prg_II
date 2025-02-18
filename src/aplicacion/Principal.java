@@ -11,7 +11,7 @@ public class Principal {
      * @param args Es el parámetro numérico que pasamos por terminal al ejecutar el programa.
      */
     public static void main(String[] args){
-        System.out.println("El número PI es " +
+        System.out.println("El numero PI es " +
                 Matematicas.generarNumeroPiIterativo(Integer.parseInt(args[0]), 0));
     }
 }
