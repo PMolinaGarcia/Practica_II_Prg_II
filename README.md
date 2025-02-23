@@ -19,3 +19,6 @@ Para ejecutar el código, debe introducirse en una terminal y entrar en el direc
 ### Comentarios del autor
 
 Tras ejecutar el código y realizar pruebas, se ha comprobado que este método, aunque arroja resultados bastante buenos y aproximados al número pi que conocemos, es limitado, puesto que, al menos en el ordenador donde ha sido programado, ofrece limitaciones al llegar a los 100000 puntos generados, puesto que la naturaleza recursiva del programa provoca un desbordamiento de pila en la máquina. Sin embargo, en un uso doméstico y como demostración del poder de la recursividad, es bastante práctico y efectivo. 
+
+
+![Diagrama UML](DiagramaUML.png)
