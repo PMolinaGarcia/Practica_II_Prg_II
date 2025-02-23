@@ -1,1 +1,0 @@
-memberSearchIndex = [{"p":"mates","c":"Matematicas","l":"dardosDentro"},{"p":"mates","c":"Matematicas","l":"generarNumeroPiRecursivo(long, long)","u":"generarNumeroPiRecursivo(long,long)"},{"p":"mates","c":"Matematicas","l":"generarPuntoAleatorio()"},{"p":"mates","c":"Matematicas","l":"Matematicas()","u":"%3Cinit%3E()"}];updateSearchResults();
