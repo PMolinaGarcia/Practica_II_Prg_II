@@ -41,7 +41,7 @@ public class Matematicas {
      * @return Retornamos el método, ya que es recursivo, introduciendo como variación que provocamos que se aplique para i+1 en vez de para i, y que así avancemos hasta el caso base.
      */
 
-    public static double generarNumeroPiIterativo(long pasos, long i){
+    public static double generarNumeroPiRecursivo(long pasos, long i){
 
         if (i==pasos){
             return 4.0*dardosDentro/pasos;
@@ -49,7 +49,7 @@ public class Matematicas {
 
         else {
             generarPuntoAleatorio();
-            return generarNumeroPiIterativo(pasos, i+1);
+            return generarNumeroPiRecursivo(pasos, i+1);
         }
     }
 }
