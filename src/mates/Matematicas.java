@@ -5,12 +5,7 @@ package mates;
  */
 public class Matematicas {
 
-    /**
-     * Declaración de la variable dardosDentro, que servirá de contador.
-     */
-    public static int dardosDentro=0;
-
-    /**
+   /**
      * Método para generar puntos aleatorios:
      * <p>
      * En primer lugar, se definen las variables coordenadaX y coordenadaY,
@@ -21,12 +16,15 @@ public class Matematicas {
      * aumentaremos en 1 el contador de dardos, indicando que ahora hay un dardo más dentro;
      * si no se da el caso de que el punto está dentro o en el borde del círculo, no sucede nada.
      */
-    public static void generarPuntoAleatorio(){
+    public static int generarPuntoAleatorio(){
         double coordenadaX = Math.random();
         double coordenadaY = Math.random();
 
         if (coordenadaX*coordenadaX+coordenadaY*coordenadaY<=1){
-            dardosDentro+=1;
+            return 1;
+        }
+        else {
+            return 0;
         }
     }
 
@@ -41,15 +39,14 @@ public class Matematicas {
      * @return Retornamos el método, ya que es recursivo, introduciendo como variación que provocamos que se aplique para i+1 en vez de para i, y que así avancemos hasta el caso base.
      */
 
-    public static double generarNumeroPiRecursivo(long pasos, long i){
+    public static double generarNumeroPiRecursivo(long pasos, long i, long dardosDentro){
 
         if (i==pasos){
             return 4.0*dardosDentro/pasos;
         }
 
         else {
-            generarPuntoAleatorio();
-            return generarNumeroPiRecursivo(pasos, i+1);
+            return generarNumeroPiRecursivo(pasos, i+1, dardosDentro + generarPuntoAleatorio());
         }
     }
 }

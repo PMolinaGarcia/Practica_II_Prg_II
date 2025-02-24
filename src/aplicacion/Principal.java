@@ -12,6 +12,6 @@ public class Principal {
      */
     public static void main(String[] args){
         System.out.println("El numero PI es " +
-                Matematicas.generarNumeroPiRecursivo(Integer.parseInt(args[0]), 0));
+                Matematicas.generarNumeroPiRecursivo(Integer.parseInt(args[0]), 0, Matematicas.generarPuntoAleatorio()));
     }
 }
